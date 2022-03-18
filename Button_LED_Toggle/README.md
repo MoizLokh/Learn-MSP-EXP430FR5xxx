@@ -6,6 +6,9 @@
 
 # Resources
 
+- Good tutorial (Contains a section for UART and interrupts aswell): http://www.simplyembedded.org/tutorials/
+- Interrupt: https://bennthomsen.wordpress.com/engineering-toolbox/ti-msp430-launchpad/using-the-switches/
+
 # Things to note
 
 - The LED demo 01 will not work on this board as the port being used is not connected to the LED. Instead of P1 use PJ (LED1-LED4) and P3 (LED5-LED8)
