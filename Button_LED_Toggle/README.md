@@ -8,6 +8,7 @@
 
 - Good tutorial (Contains a section for UART and interrupts aswell): http://www.simplyembedded.org/tutorials/
 - Interrupt: https://bennthomsen.wordpress.com/engineering-toolbox/ti-msp430-launchpad/using-the-switches/
+- LED: https://scienceprog.com/running-leds-on-msp-exp430fr5739-fram-board/
 
 # Things to note
 
