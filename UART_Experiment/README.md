@@ -54,3 +54,9 @@ If you want to send data to the computer we use eUSCI_A1 and those pins are P2.1
   - UCOS16 bit is either set to 1 (oversampling mode) or 0
   - UBRFx field
   - UCBRSx field
+
+## Interrupts for TX and RX
+
+The TX or RX interrupts can be enabled by setting the UCRXIE and UCTXIE field in the UCAxIE register.
+
+Note: Always enable iterrupts for UART **after** removing UART from reset mode. Failure to do so will cause the interrupt enable bit to reset after setting it.
