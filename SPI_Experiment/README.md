@@ -6,6 +6,7 @@
 # Resources
 
 - Video series on UART in MSP430 (https://www.youtube.com/watch?v=2J8_dpnaBOk)
+- https://www.argenox.com/library/msp430/msp430-spi-peripheral-chapter-9/
 
 # Things to note
 
@@ -22,6 +23,7 @@ The eUSCI_A and B we used for UART also support SPI communication protocol. SPI 
 
 1. Set UCSWRST in the UCxCTL1 register. Sets it to reset state.
 2. Initialize all eUSCI registers
+   - UCCKPH and UCCKPL need to be set depending on the slave device (When the rising edge of the clk should be?)
 3. Configure the ports (The pin should be in SPI mode instead of GPI0 which is the default)
 4. Ensure that UCxSOMI (Master mode) have settled to final voltage levels
 5. Clear the UCSWRST bit - Out of reset mode
